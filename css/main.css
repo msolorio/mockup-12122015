@@ -37,6 +37,9 @@ GENERAL STYLES
 	.font-medium {
 		font-weight:300;
 	}
+	.bg-opaque {
+		background: rgba(0, 0, 0, 0.60);
+	}
 
 /*************************************
 GRID
@@ -71,8 +74,8 @@ HEADER NAVIGATION
 **************************************/
 #header-nav {
 	z-index: 999999;
-	position: absolute;
-	right: 0;
+	position: relative;
+	float: right;
 }
 #header-nav-ul {
 
@@ -89,7 +92,6 @@ HEADER NAVIGATION
 	text-align:center;
 	text-transform:uppercase;
 	font-size: 1.2em;
-	background: rgba(0, 0, 0, 0.55);
 }
 .header-nav-a-home {
     box-sizing: content-box;
@@ -114,6 +116,15 @@ HEADER NAVIGATION
 .header-nav-a-three:hover {
 	background: rgba(197, 100, 0, 0.45); /*orange*/
 	/*font-weight:400;*/
+}
+/*************************************
+INFO BLOCK
+**************************************/
+#info-block {
+	z-index: 9999999;
+	width: 400px;
+	height: 200px;
+	top: 191px;
 }
 
 /*************************************
