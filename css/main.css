@@ -7,21 +7,35 @@ Normalize.css
 GENERAL STYLES
 **********************************/
 	*, *::before, *::after {
+		margin:0;
+		padding:0;
 
 	    -webkit-box-sizing: border-box;
 	       -moz-box-sizing: border-box;
 	            box-sizing: border-box;
 	}
+	body {
+		font-family:'Lato', sans-serif;
+	}
 	ul {
 		list-style-type:none;
 	}
 	.section-wrap {
-		max-width:1170px;
+		max-width: 1115px;
 		margin:0 auto;
 		padding:0 3.7%;
 	}
+	.relative {
+		position:relative;
+	}
 	.clear-both {
 		clear:both;
+	}
+	.font-light {
+		font-weight:100;
+	}
+	.font-medium {
+		font-weight:300;
 	}
 
 /*************************************
@@ -41,6 +55,13 @@ GRID
 	.col-12 { width: 100%;     }
 
 /*************************************
+COLORS
+**************************************/
+.white {
+	color: #fff;
+}
+
+/*************************************
 MAIN
 **************************************/
 
@@ -48,13 +69,57 @@ MAIN
 /*************************************
 HEADER NAVIGATION
 **************************************/
+#header-nav {
+	z-index: 999999;
+	position: absolute;
+	right: 0;
+}
+#header-nav-ul {
 
+}
+.header-nav-li {
+	float: left;
+}
+.header-nav-a {
+	display:block;
+	width: 106px;
+	height: 48px;
+	line-height: 53px;
+	text-decoration: none;
+	text-align:center;
+	text-transform:uppercase;
+	font-size: 1.2em;
+	background: rgba(0, 0, 0, 0.55);
+}
+.header-nav-a-home {
+    box-sizing: content-box;
+    padding-left: 7px;
+}
+.header-nav-a-three {
+	box-sizing: content-box;
+	padding-right: 12px;
+}
+.header-nav-a-home:hover {
+	background: rgba(25, 101, 0, 0.45); /*green*/
+	/*font-weight:400;*/
+}
+.header-nav-a-one:hover {
+	background: rgba(0, 37, 119, 0.55); /*blue*/
+	/*font-weight:400;*/
+}
+.header-nav-a-two:hover {
+	background: rgba(125, 121, 0, 0.45); /*yellow*/
+	/*font-weight:400;*/
+}
+.header-nav-a-three:hover {
+	background: rgba(197, 100, 0, 0.45); /*orange*/
+	/*font-weight:400;*/
+}
 
 /*************************************
 SLIDESHOW
 **************************************/
 	#slideshow-container {
-		position: relative;
 		padding-bottom: 75%;
 		height: 0;
 		width: 100%;
